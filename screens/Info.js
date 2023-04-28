@@ -101,6 +101,7 @@ const styled = StyleSheet.create({
 
 	infoTextThree: {
 		marginVertical: 20,
+		marginBottom: 30,
 		fontWeight: 600,
 		fontSize: 16,
 		color: 'red',
