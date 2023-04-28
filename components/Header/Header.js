@@ -9,7 +9,7 @@ export const Header = ({ navigation }) => {
 			<View style={styled.header}>
 				<AppBar
 					style={styled.appBar}
-					title='Kod kambinatsiyalar'
+					title='Kod kombinatsiyalar'
 					trailing={(props) => (
 						<IconButton
 							onPress={() => navigation.navigate('Info')}
