@@ -1,31 +1,35 @@
 import React from 'react';
-import { AppBar, IconButton } from '@react-native-material/core';
+import { IconButton, Text } from '@react-native-material/core';
 import Icon from '@expo/vector-icons/Entypo';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 export const Header = ({ navigation }) => {
 	return (
-		<SafeAreaView>
-			<View style={styled.header}>
-				<AppBar
-					style={styled.appBar}
-					title='Kod kombinatsiyalar'
-					trailing={(props) => (
-						<IconButton
-							onPress={() => navigation.navigate('Info')}
-							icon={(props) => <Icon name='info-with-circle' {...props} />}
-							{...props}
-						/>
-					)}
-				/>
-			</View>
-		</SafeAreaView>
+		<View style={styled.header}>
+			<Text style={styled.headerTitle}>Kod kombinatsiyalar</Text>
+			<IconButton
+				onPress={() => navigation.navigate('Info')}
+				icon={(props) => <Icon name='info-with-circle' {...props} />}
+			/>
+		</View>
 	);
 };
 
 const styled = StyleSheet.create({
-	header: {},
-	appBar: {
-		paddingTop: 30,
+	header: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'space-between',
+		paddingHorizontal: 10,
+		paddingTop: 40,
+		borderBottomRightRadius: 10,
+		borderBottomLeftRadius: 10,
+		elevation: 8,
+	},
+
+	headerTitle: {
+		fontFamily: 'sans-serif',
+		fontWeight: 900,
+		fontSize: 22,
 	},
 });

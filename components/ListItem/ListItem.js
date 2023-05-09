@@ -59,11 +59,15 @@ export const ListItem = ({
 				<View style={styled.iconButtonsWrapper}>
 					<IconButton
 						onPress={() => setVisible(true)}
-						icon={(props) => <Icon name='file-edit' {...props} />}
+						icon={(props) => (
+							<Icon name='file-edit' {...props} style={{ color: '#EBB02D' }} />
+						)}
 					/>
 					<IconButton
 						onPress={() => handleDeleteItem(item.id)}
-						icon={(props) => <Icon name='delete' {...props} />}
+						icon={(props) => (
+							<Icon name='delete' {...props} style={{ color: '#ED2B2A' }} />
+						)}
 					/>
 				</View>
 			</TouchableOpacity>
@@ -143,10 +147,12 @@ const styled = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		marginTop: 20,
-		padding: 6,
-		borderWidth: 1,
+		paddingHorizontal: 12,
+		paddingVertical: 6,
+		borderWidth: 2,
 		borderColor: '#333',
 		borderRadius: 10,
+		elevation: 4,
 	},
 
 	itemTitle: {

@@ -72,7 +72,7 @@ export const Info = ({ navigation }) => {
 
 const styled = StyleSheet.create({
 	container: {
-		padding: 20,
+		padding: 10,
 	},
 	backBtn: {
 		marginTop: 20,
