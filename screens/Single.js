@@ -106,7 +106,7 @@ const styled = StyleSheet.create({
 	},
 
 	title: {
-		marginTop: 100,
+		marginTop: 90,
 		fontSize: 22,
 		fontWeight: 700,
 		textAlign: 'center',
@@ -115,7 +115,7 @@ const styled = StyleSheet.create({
 	backBtn: {
 		marginTop: 20,
 		paddingHorizontal: 10,
-		width: '30%',
+		width: '33%',
 		backgroundColor: '#333',
 	},
 
